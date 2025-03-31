@@ -296,11 +296,12 @@ footer a{
 footer a:hover{
     text-decoration:underline;
 }    
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-size: 11px;
     }
 
     /* Navigation */
@@ -308,15 +309,16 @@ footer a:hover{
         flex-direction: row;
         align-items: center;
         text-align: center;
-        padding: 10px;
+        padding: 1px;
+        margin: 11px;
     }
     nav .left {
-        margin: 10px 0;
+        margin: 4px 0;
     }
     nav .right {
         flex-direction: column;
         align-items: center;
-        margin: 0;
+        margin: 14px;
     }
     nav .right ul {
         flex-direction: row;
@@ -329,39 +331,68 @@ footer a:hover{
 
     .body {
         flex-direction:row;
-        margin-top: 80px;
+        margin-top: 40px;
         margin-left: 0;
     }
-    .body .text {
-        max-width: 90%;
+    .body .text  h2 b{
+        font-size: 12px;
+        margin: 0;
+    }
+    .body .text  h2 ,img{
+        width: 100%;
         margin: 8px;
+        font-size: 12px;
+    }
+    body .text #logo{
+        height: 13px;
+        width: 13px;
+        margin: 3px;
     }
     .body .text p{
-        width: 78%;
-        line-height: 29px;
+        width: 80%;
+        font-size: 7px;
+        margin-top: 13px;
+        margin-left: 6px;
+        line-height: 17px;
     }
     .body .img {
         position: relative;
         align-items: center;
-        margin: 20px 0;
+        margin:49px 9px;
+        height: 100%;
+        width: 100%;
     }
 
     /* Projects */
     .projects {
         margin-left: 5%;
         margin-right: 5%;
+        flex-wrap: wrap;
     }
     .project {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        padding: 15px;
+        text-align: center;
+        width: 95%;
+        padding: 2px;
+        position: relative;
     }
     .project .img {
         flex-basis: auto;
+        height: 10%;
+        width: 10%;
         margin-bottom: 10px;
     }
+    .project .font h3 b {
+        margin-left: 0;
+        margin: 2px;
+        flex-grow: 1;
+        margin-bottom: 0;
+        font-size: 6px;
+    }
     .project .font p{
-        line-height: 2.3vh;
+        line-height: 1.7vh;
+        font-size: 9px;
     }
 
     /* Skills */
@@ -372,34 +403,86 @@ footer a:hover{
     .skill {
         flex-wrap: wrap;
         justify-content: center;
-        padding: 10px;
+        padding: 4px;
     }
     .skill img {
-        width: 70px;
-        height: 70px;
+        width: 40px;
+        height: 40px;
+    }
+    .skills h3, .skills p {
+        font-size: 14px;
     }
 
     /* Subscribe Section */
     .subscribe {
-        margin: 0;
+        margin: 0 0 12px;
         flex-direction: row;
     }
     .subscribe .detail{
-        font-size: 15px;
-        margin: 3px;
+        font-size: 11px;
+        margin: 2px;
+    }
+    .subscribe .detail h2 {
+        font-size: 14px;
+    }
+    .subscribe .detail h2 b {
+        font-size: 14px;
     }
     .subscribe .detail p{
-        font-size: 15px;
-        margin: 4px;
-        line-height: 2.2vh;
+        font-size: 9px;
+        margin-top: 12px;
+        line-height: 2vh;
     }
-    .subscribe .input {
+    .subscribe form{
         width: 100%;
+        height: 20%;
+        border-radius: 30px;
+        background-color: #1e293b;
+        transform: translate(0, 0);
+    }
+    .subscribe .input  {
+        width: 100%;
+        height: 20%;
+        font-size: 2px;
         margin-top: 10px;
+    }
+    .subscribe .input input {
+        width: 70%;
+        height: 20%;
+        padding: 2px 2px;
+        font-size: 8px;
+        margin: 3px 3px;
+        border-radius: 30px 0 0 30px;
+    }
+    .subscribe .input button {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        height: 30%;
+        width: 20%;
+        outline: none;
+        margin-right: 5px;
+        margin-bottom: 2px;
+        padding: 1px 1px;
+        font-size: 4px;
     }
     hr{
         margin: 8px 8px 8px;
         width: 100%;
     }
+    footer {
+        margin: 0 0 12px;
+        font-size: 5px;
+        text-align: center;
+    }
+    footer p{
+        font-size: 6px;
+        margin: 0;
+    }
+    footer a {
+        font-size: 6px;
+    }   
 
 }
